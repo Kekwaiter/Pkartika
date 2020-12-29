@@ -1,0 +1,619 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #848789;
+}
+
+button, input {
+    outline: none;
+}
+
+button {
+    background: none;
+    cursor: pointer;
+}
+
+.wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    letter-spacing: 5px;
+    color: #353738;
+}
+
+header {
+    height: 800px;
+    background: url(../images/header.jpg) no-repeat center;
+    background-size: cover;
+    padding: 25px;
+}
+
+.header-nav ul {
+    list-style: none;
+    width: 627px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #4d4959;
+    letter-spacing: 3px;
+}
+
+.block {
+    text-align: center;
+}
+
+.block-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin: 30px 0;
+}
+
+.block-desc {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.gray {
+    background-color: #f7f7f7; 
+}
+
+.about {
+    padding: 110px 0 130px;
+}
+
+.twitter {
+    padding: 125px 0 70px;
+    text-align: center;
+}
+
+.twitter-title {
+    font-size: 1.125rem;
+    letter-spacing: 2px; 
+    margin: 35px 0 25px;
+}
+
+.twitter-title__time {
+    font-weight: 300;
+    color: #848789;
+}
+
+.twitter-text {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+}
+
+.twitter-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.twitter-button:first-child {
+    background-color: #a9afb3;
+}
+
+.twitter-button {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #a9afb3;
+    border-radius: 50%;
+}
+
+.twitter-button + .twitter-button {
+    margin-left: 10px;
+}
+
+.discover {
+    background-color: #282f35;
+    padding: 75px 0;
+}
+
+.discover-button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    max-width: 300px;
+    border: 1px solid #94979a;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.forma-block {
+    padding: 105px 0 110px;
+    text-align: center;
+}
+
+.forma-title {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #848789;
+    margin: 35px 0;
+}
+
+.forma {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0 auto;
+    width: 570px;
+}
+
+.forma input, .forma button {
+    height: 100%;
+}
+
+.forma button {
+    width: 127px;
+    border: none;
+    background-color: #64c29e;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.forma input {
+    width: 400px;
+    border: 1px solid #d3d7d9;
+    padding-left: 25px;
+    color: #848789;
+}
+
+.forma input[placeholder] {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+}
+.forma input::-moz-placeholder {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+} 
+.forma input:-moz-placeholder {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+} 
+.forma input:-ms-input-placeholder {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+}    
+
+::-webkit-input-placeholder 
+{color:#dbdbdb;}
+::-moz-placeholder          
+{color:#dbdbdb;}
+:-moz-placeholder           
+{color:#dbdbdb;}
+:-ms-input-placeholder      
+{color:#dbdbdb;}
+
+footer {
+    padding: 100px 0;
+}
+
+.wrap-footer {
+    display: flex;
+    align-items: center;
+}
+
+.city {
+    font-weight: 700;
+}
+
+.contact {
+   font-style: italic; 
+}
+
+.footer-social {
+    display: flex;
+    width: 135px;
+    justify-content: space-between;
+    margin-left: 250px;
+}
+
+
+
+/* Work */
+
+.work {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+        "one one b-one"
+        "one one b-one"
+        "one one s-one"
+        
+        "b-two two two"
+        "b-two two two"
+        "s-two two two"
+        
+        "l-three b-three r-three"
+        "l-three b-three r-three"
+        "l-three s-three r-three";
+    grid-auto-rows: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.grid-block:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: translate3d(0, 1000%, 0) rotate(45deg);
+    position: absolute;
+    z-index: 3;
+    margin: 0 auto;
+}
+
+.grid-desc {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.grid-desc:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #d7d7d7;
+    margin: 40px auto 0;
+}
+
+.grid-big {
+    position: relative;
+}
+
+.grid-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.back-one {
+    background: url(../images/bike1-back.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: one;
+}
+.b-one {
+    grid-area: b-one;
+}
+.s-one {
+    background: url(../images/bike1-img.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: s-one;
+}
+.back-two {
+    background: url(../images/bike2-back.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: two;
+}
+.b-two {
+    grid-area: b-two;
+}
+.s-two {
+    background: url(../images/bike2-img.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: s-two;
+}
+.l-three {
+    background: url(../images/bike3-left.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: l-three;
+}
+.b-three {
+    grid-area: b-three;
+}
+.s-three {
+    background: url(../images/bike3-img.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: s-three;
+}
+.r-three {
+    background: url(../images/bike3-right.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: r-three;
+}
+
+/* (end) Work */
+
+/* Shop */
+
+.shop {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+        "one two three four five five"
+        "six six three four seven eight";
+    grid-auto-rows: 267px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.shop-item {
+    position: relative;
+}
+
+.shop-item:hover .green {
+    opacity: 1;
+}
+
+.green {
+    background-color: rgba(100, 194, 158, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.item__link {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.one {
+    background: url(../images/shop1.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: one;
+}
+.two {
+    background: url(../images/shop2.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: two;
+}
+.three {
+    background: url(../images/shop4.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: three;
+}
+.four {
+    background: url(../images/shop5.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: four;
+}
+.five {
+    background: url(../images/shop6.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: five;
+}
+.six {
+    background: url(../images/shop3.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    grid-area: six;
+}
+.seven {
+    background: url(../images/shop7.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: seven;
+}
+.eight {
+    background: url(../images/shop8.jpg) no-repeat center;
+    background-size: cover;
+    grid-area: eight;
+}
+
+/* (end)Shop */
+
+
+/* Responsive */
+
+@media screen and (max-width: 1562px) {
+    
+    .grid-desc:after {
+        margin: 10px auto 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .work .block-title {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    
+     .work .block-title {
+        margin: 5px 0;
+        font-size: 1.1rem;
+    }
+    
+    .grid-desc {
+        line-height: 1.1;
+    }
+    
+    .wrap {
+        width: 90%;
+    }
+    
+    .shop {
+        grid-template-areas: 
+        "one two three"
+        "six six three"
+        "four five five"
+        "four seven eight";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 880px)  {
+    
+    .work {
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+        grid-template-areas: 
+            "b-one"
+            "s-one"
+            "b-two"
+            "s-two"
+            "b-three"
+            "s-three";
+    }
+    
+    .back-one, .back-two, .l-three, .r-three {
+        display: none;
+    }
+    
+    .grid-block:after {
+        transform: translate3d(0, 630%, 0) rotate(45deg);
+    }
+    
+    .grid-desc:after {
+        margin: 25px auto 0;
+    }
+    
+    .about, .twitter, .forma-block {
+        padding: 80px 0;
+    }
+    
+    footer {
+        padding: 60px 0;
+    }
+    
+    .footer-social {
+        margin-left: 0;
+    }
+    
+    .wrap-footer {
+        justify-content: space-between;
+    }
+    
+    .twitter-text {
+        margin-bottom: 60px;
+    }
+    
+    .work .block-title {
+        margin: 10px 0;
+    } 
+}
+
+
+@media screen and (max-width: 710px) {
+    
+    .header-nav {
+        display: none;
+    }
+    
+    header {
+        height: 500px;
+    }
+    
+    .forma {
+        flex-direction: column;
+        height: 150px;
+        width: 100%;
+    }
+    
+    .forma input, .forma button {
+        height: 70px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .shop {
+        
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight";
+    }
+    
+    .work .block-icon {
+        display: none;
+    }
+    
+    .work {
+        grid-auto-rows: 300px;
+    }
+    
+    .grid-block:after {
+        transform: translate3d(0, 750%, 0) rotate(45deg); 
+    }
+}
+
+
+/* Hover */
+
+.nav__link:hover {
+    color: #777;
+}
+
+.discover-button:hover {
+    color: #282f35;
+    background-color: #fff;
+}
+
+
+.forma button:hover {
+    background-color: #fff;
+    color: #64c29e;
+    border: 1px solid #64c29e;
+}
